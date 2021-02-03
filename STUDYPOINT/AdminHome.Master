@@ -1,0 +1,65 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="AdminHome.master.cs" Inherits="STUDYPOINT.AdminHome" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <asp:ContentPlaceHolder ID="head" runat="server">
+        <title>Admin Home</title>
+    </asp:ContentPlaceHolder>
+      <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <style>
+     .size
+        {
+            font-size:50px;
+          
+        }
+      </style>
+</head>
+<body>
+    <form runat="server">
+            <div  style="border:solid; height:300px;width:100%;background-color:chocolate;">
+        <asp:Image ID="Image2" runat="server" Height="100px" ImageUrl="~/img/6.png" Width="116px" />  
+        <asp:Label ID="Label2" runat="server" Text="Study point...!"   ForeColor="Blue" CssClass="size" Font-Bold="True" Font-Italic="True"></asp:Label>
+                
+
+
+    
+      
+                <asp:button runat="server" id="PCourses" CssClass="btn btn-primary btn-lg" style="margin-top:25px;float:right" Text="Paid Courses" onclick="PCourses_Click"></asp:button>
+              
+                <asp:button ID="Msub" runat="server" CssClass="btn btn-primary btn-lg" style="margin-top:25px; margin-right:50px; float:right" Text="Manage Subjects" onclick="Msub_Click"></asp:button>
+     
+                 <asp:button runat="server" CssClass="btn btn-primary btn-lg" style="margin-top:25px; margin-right:50px;float:right" Text="Manage Courses" OnClick="Unnamed_Click"></asp:button><br />
+
+
+                <asp:button runat="server" id="uploadvidio" CssClass="btn btn-primary btn-lg" style="margin-top:25px; float:right" Text="Upload Vidio" onclick="uploadvidio_Click"></asp:button>
+                
+                
+                  <asp:button runat="server" id="UploadPDF" CssClass="btn btn-primary btn-lg" style="margin-top:25px;margin-right:70px;float:right" Text="Upload PDF" onclick="UploadPDF_Click"></asp:button>
+
+               <asp:button runat="server" id="uprofile" CssClass="btn btn-primary btn-lg" style="margin-top:25px;margin-right:90px;float:right" 
+                 Text="User Profile" OnClick="uprofile_Click"></asp:button>
+
+          <asp:Image ID="Image1" runat="server" CssClass="card-img-top" alt="Card image" ImageUrl="~/img/20.png" Width="80px" style="margin-top:15px;margin-right:480px;float:right" /><br /><br /><br /><br />
+                
+                <asp:button  id="logout" runat="server" CssClass="btn btn-primary btn-lg" style="margin-top:25px; float:right" Text="Logout" OnClick="logout_Click1" ></asp:button>
+     
+                <asp:button runat="server" id="fdb" CssClass="btn btn-primary btn-lg" style="margin-top:25px; margin-right:120px;float:right" Text="Feedbacks" OnClick="fdb_Click"></asp:button>
+
+                <asp:button runat="server" id="Home" CssClass="btn btn-primary btn-lg" style="margin-top:25px; margin-right:120px;float:right" Text="Home" OnClick="Home_Click"></asp:button>
+       
+</div>
+
+
+        <asp:ContentPlaceHolder ID="body1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+        </form>
+</body>
+</html>

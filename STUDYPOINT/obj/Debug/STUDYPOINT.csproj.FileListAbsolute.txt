@@ -1,0 +1,7 @@
+c:\users\arun singh\documents\visual studio 2013\Projects\STUDYPOINT\STUDYPOINT\bin\STUDYPOINT.dll.config
+c:\users\arun singh\documents\visual studio 2013\Projects\STUDYPOINT\STUDYPOINT\bin\STUDYPOINT.dll
+c:\users\arun singh\documents\visual studio 2013\Projects\STUDYPOINT\STUDYPOINT\bin\STUDYPOINT.pdb
+c:\users\arun singh\documents\visual studio 2013\Projects\STUDYPOINT\STUDYPOINT\obj\Debug\STUDYPOINT.csprojResolveAssemblyReference.cache
+c:\users\arun singh\documents\visual studio 2013\Projects\STUDYPOINT\STUDYPOINT\obj\Debug\STUDYPOINT.dll
+c:\users\arun singh\documents\visual studio 2013\Projects\STUDYPOINT\STUDYPOINT\obj\Debug\STUDYPOINT.pdb
+C:\Users\Arun singh\documents\visual studio 2013\Projects\STUDYPOINT\STUDYPOINT\bin\paytm.dll

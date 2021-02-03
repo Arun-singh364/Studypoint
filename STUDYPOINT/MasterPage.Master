@@ -1,0 +1,152 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.master.cs" Inherits="STUDYPOINT.MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+     <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+   
+     <style>
+        
+        .size
+        {
+            font-size:50px;
+        }
+         .size1
+        {
+            font-size:25px;
+        }
+        
+       
+  .carousel-inner img {
+      width: 100%;
+      height: 350px;
+  }
+
+     .form-container{border:0px solid; padding:50px 80px; margin-top:20vh;
+      -webkit-box-shadow:-1px 4px 26px 11px rgba(0,0,0,0.75);
+      -moz-box-shadow:-1px 4px 26px 11px rgba(0,0,0,0.75);
+      box-shadow:-1px 4px 26px 11px rgba(0,0,0,0.75);
+     }
+      </style>
+
+</head>
+<body>
+      <form runat="server">
+        <asp:Panel ID="Panel1" runat="server"  Height="127px">
+            <div style="float:left; width:50%; height:127px">
+            <asp:Image ID="Image2" runat="server" Height="123px" ImageUrl="~/img/6.png" Width="116px" />
+            <asp:Label ID="Label2" runat="server" Text="Study point...!" CssClass="size" ForeColor="#990000"></asp:Label>
+                </div>
+            <div style="float:right; width:50%; height:127px; background-color: transparent;">
+       
+
+               
+                 <div class="btn-group">
+
+    <a type="button"  class="btn btn-primary" href="Home.aspx">HOME</a>
+     <a type="button"  class="btn btn-primary" href="Feedback.aspx">FEEDBACK</a>
+    <a type="button"  class="btn btn-primary" href="#Panel4">ABOUT US</a>
+    <a type="button"  class="btn btn-primary"  href="#Panel4" >CONTACT</a>
+    <asp:LinkButton ID="logout" CssClass="btn btn-primary"  runat="server" OnClick="logout_Click1">LOGOUT</asp:LinkButton>
+                   
+
+                    
+                 </div>
+                    
+                   <div class="container" style="margin-left:400px; margin-top:100px; ">
+  <div class="card" style="width:250px; height:350px; ">
+       <asp:Image ID="Image1" runat="server" CssClass="card-img-top" alt="Card image" ImageUrl="~/img/20.png" Width="100%" />
+    <div class="card-body">
+      <h4 class="card-title"> <i><b><asp:Label ID="Label1" runat="server" Text="Label" ForeColor="#CC0000" style="margin-left:30px;"></asp:Label></b></i></h4>
+         <asp:LinkButton ID="EditProfile" CssClass="btn btn-primary"  runat="server" OnClick="EditProfile_Click">Edit Profile</asp:LinkButton>
+                   
+    </div>
+  </div>
+                 </div>
+              
+ 
+            </div>
+
+        </asp:Panel>
+        <asp:Panel ID="Panel2" runat="server" style="height:200px; width:80%;">
+            <div style="margin-top:15px; float:left; width:100%; height:200px">
+              
+             <div id="demo" class="carousel slide" data-ride="carousel">
+
+           
+  
+  <!-- The slideshow -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+        <img src="img/12.jpg" alt="Los Angeles" />
+    </div>
+    <div class="carousel-item">
+        <img src="img/9.jpg" alt="Chicago" />
+    </div>
+
+       <div class="carousel-item">
+        <img src="img/11.jpg" alt="Chicago" />
+    </div>
+
+       <div class="carousel-item">
+        <img src="img/10.jpg" alt="Chicago" />
+    </div>
+       <div class="carousel-item">
+        <img src="img/13.jpg" alt="Chicago" />
+    </div>
+ </div> 
+  <!-- Left and right controls -->
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+                  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+                       <!-- Indicators -->
+            <ul class="carousel-indicators">
+              <li data-target="#demo" data-slide-to="0" class="active"></li>
+              <li data-target="#demo" data-slide-to="1"></li>
+                 <li data-target="#demo" data-slide-to="2"></li>
+                 <li data-target="#demo" data-slide-to="3"></li>
+                 <li data-target="#demo" data-slide-to="4"></li>
+             </ul>
+</div>      
+ </div>
+  
+        </asp:Panel>
+
+
+        <asp:ContentPlaceHolder ID="body" runat="server">
+        
+        </asp:ContentPlaceHolder>
+             <asp:Panel ID="Panel4" runat="server" style=" background-color:darkgray; margin-top:150px;   height:300px; width:100%;">
+
+        <div class="row">
+        <div class="col" > <b style="font-size: xx-large; font-style: oblique; color: #000000">About us:-</b>
+            <p>This is a online forum for <br />online learning for various exam<br /> like GATE,NET,RET etc.<br />Also provide the notification<br />for various colleges and institute.</p>
+        </div>
+            
+      <div class="col"><b style="font-size: xx-large; font-style: oblique">Contact:-</b>
+             <div class="btn-group" style="float:right; margin-top:10px">
+                   </div>
+            <p>mobile no.:-7394899094</p>
+             <p>Email:-arunsinghrajpoot364@gmail.com</p><br />
+        
+
+        </div>
+
+        </div>
+          
+        </asp:Panel>
+
+  </form>
+</body>
+</html>
